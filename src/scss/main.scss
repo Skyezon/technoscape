@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900');
+@import "vendor";
+@import "variable";
+@import "mixin";
+@import "resets";
+@import "img";
+@import "fonts";
+@import "colour";
+@import "animation";
+
+.center-flex{
+  @include centerized-flex;
+}
+
+.header{
+  height: 100vh;
+  background-image: linear-gradient(to bottom,rgba($background-gradient-1,.1),rgba($background-gradient-2,.1)),url("../assets/images/header_section/header_bg_3.png");
+  background-size: cover;
+
+}

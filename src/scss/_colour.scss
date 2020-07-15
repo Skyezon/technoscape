@@ -1,0 +1,11 @@
+.color{
+  &-font{
+    &-primary{
+      color: $primary;
+    }
+
+    &-secondary{
+      color: $secondary-white;
+    }
+  }
+}

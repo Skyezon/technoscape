@@ -1,0 +1,40 @@
+.font{
+  &-hero{
+    @include rfs($font-size-hero);
+    font-weight: 800;
+    line-height: 1.25;
+    &-highlight{
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include bg-gradient(to left,100%,$gradient-accent-1,$gradient-accent-2);
+    }
+  }
+  &-headline{
+    &-1{
+      @include rfs($font-size-headline-1);
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    &-2{
+      @include rfs($font-size-headline-2);
+      font-weight: 700;
+      line-height: 1.5;
+    }
+  }
+
+  &-subheadline{
+    @include rfs($font-size-subheadline);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  &-button{
+    @include rfs($font-size-button);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  &-caption{
+    @include rfs($font-size-caption);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}

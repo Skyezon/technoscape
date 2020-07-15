@@ -1,0 +1,11 @@
+@mixin bg-gradient($direction,$alpha,$color1,$color2){
+  background-image: linear-gradient($direction,rgba($color1,$alpha),rgba($color2,$alpha));
+  background-repeat: no-repeat;
+}
+@mixin centerized-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
