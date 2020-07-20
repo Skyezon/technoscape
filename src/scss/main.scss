@@ -12,9 +12,62 @@
   @include centerized-flex;
 }
 
+.transition-hero-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 20vh;
+  margin-top: -5vh;
+  filter: blur(50px);
+  //background-color: red;
+  @include bg-gradient(to top,100%, $background-gradient-1,$background-gradient-2);
+  z-index: 0;
+}
+
 .header{
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to bottom,rgba($background-gradient-1,.1),rgba($background-gradient-2,.1)),url("../assets/images/header_section/header_bg_3.png");
   background-size: cover;
-
+  z-index: 1;
 }
+
+.main{
+  display: block;
+  position: relative;
+  background: linear-gradient(90deg, $background-gradient-1 0%, $background-gradient-2 51.04%, $background-gradient-1 100%);
+  z-index: 3;
+}
+
+.event{
+  position: relative;
+  &-link{
+    color: $secondary-white;
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
+    //@include bg-gradient(to right, 100%,$gradient-accent-1,$gradient-accent-2);
+    &:hover{
+      //@include bg-gradient(to right, 100%,$secondary-white,$secondary-white);
+      &.event-link::after{
+        width: 12rem;
+      }
+    }
+
+    & > img{
+      height: 1.5rem;
+    }
+    &::after{
+      transition: width 2s;
+      content: "";
+      position: absolute;
+      bottom: 2.5rem;
+      left: 0;
+      height: 0.2rem;
+      width: 0;
+      @include bg-gradient(to right, 100%,$gradient-accent-1,$gradient-accent-2);
+    }
+  }
+}
+
+

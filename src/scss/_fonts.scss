@@ -3,11 +3,12 @@
     @include rfs($font-size-hero);
     font-weight: 800;
     line-height: 1.25;
-    &-highlight{
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      @include bg-gradient(to left,100%,$gradient-accent-1,$gradient-accent-2);
-    }
+
+  }
+  &-highlight{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include bg-gradient(to left,100%,$gradient-accent-1,$gradient-accent-2);
   }
   &-headline{
     &-1{
@@ -36,5 +37,30 @@
     @include rfs($font-size-caption);
     font-weight: 500;
     line-height: 1.5;
+  }
+
+  &-shadowline{
+    position: relative;
+    z-index: 11;
+    &-before{
+      position: absolute;
+      top: 30px;
+      left: -10px;
+      line-height: .8;
+      background-image: linear-gradient(to right,rgba($background-gradient-1,1%),rgba($background-gradient-2,30%));
+      -webkit-text-fill-color: transparent;
+      z-index: -1;
+      filter: blur(10px);
+    }
+    &-after{
+      z-index: 9;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      -webkit-text-fill-color: transparent;
+      z-index: -10;
+      -webkit-text-stroke-color: rgba($secondary-white,.3);
+      -webkit-text-stroke-width: 2px;
+    }
   }
 }
