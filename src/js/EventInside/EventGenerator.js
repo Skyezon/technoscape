@@ -15,10 +15,6 @@ class EventGenerator {
 
      initEvent (eventData)  {
         const eventInside = document.getElementById("event-inside");
-        const dateIcon = new Image();
-        dateIcon.src = DateIcon;
-        dateIcon.alt = "date-icon"
-         dateIcon.classList.add("mr-3");
 
         eventData.forEach((data,index) => {
             const {normalHeader,wierdHeader,time,paragraph,link,image} = data;
@@ -36,7 +32,7 @@ class EventGenerator {
                         <a class="my-5 d-flex align-items-center event-link font-button" href="${link}">Visit the web <img src="${ExternalLink}" class="ml-3" alt="external-link-icon" /> </div></a>
                     </div>
                     <div class="col-lg-6 position-relative  d-flex justify-content-center" id="event-image-container-${index}">
-                    <img src="${image}" alt="image-event" class="img-event" />
+                    <img src="${image}" alt="image-even" class="img-event" />
                 </div>
                 <img id="mesh-${index}" src="${Mesh}" class="img-mesh" alt="img-mesh" />
                 </div>

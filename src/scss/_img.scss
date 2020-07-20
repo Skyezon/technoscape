@@ -49,6 +49,7 @@
     top: -8.5rem;
     right: -7.5rem;
     z-index: -1;
+    height: 60rem;
   }
 
   &-event{
@@ -56,5 +57,24 @@
     top: 0;
     right: 0;
     height: 40rem;
+  }
+
+  &-background-event{
+    height: 30rem;
+  }
+  &-play{
+    position: absolute;
+    background: linear-gradient(180deg, $gradient-accent-1 -91.35%, $gradient-accent-2 100%);
+
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    & > img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
   }
 }

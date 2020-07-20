@@ -40,6 +40,14 @@
   z-index: 3;
 }
 
+.video-modal{
+  cursor: pointer;
+}
+
+.modal-video-movie-wrap{
+  margin-top: 3rem;
+}
+
 .event{
   position: relative;
   &-link{
