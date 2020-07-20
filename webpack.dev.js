@@ -3,6 +3,7 @@ const common = require("./webpack.common.js");
 const {merge} = require("webpack-merge")
 module.exports = merge(common,{
     mode: "development",
+    devtool: "eval",
     module : {
         rules : [
             {
@@ -10,6 +11,7 @@ module.exports = merge(common,{
                 use : ["style-loader","css-loader","sass-loader"]
             },
         ]
+
     },
     output : {
         filename: "[name].bundle.js",
