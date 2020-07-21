@@ -1,0 +1,31 @@
+.sponsor-list{
+  margin-bottom: 5rem !important;
+  & > img{
+    margin: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+#sponsor-list{
+
+  &-platinum{
+    & img{
+      height: $sponsor-biggest-size
+    }
+  }
+  &-gold{
+    & img{
+      height: $sponsor-biggest-size - 2rem
+    }
+  }
+  &-silver{
+    & img{
+      height: $sponsor-biggest-size - 4rem;
+    }
+  }
+
+  &-media-partner{
+    & img{
+      height: $sponsor-biggest-size - 5rem;
+    }
+  }
+}

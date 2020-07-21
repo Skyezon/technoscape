@@ -3,7 +3,6 @@
     @include rfs($font-size-hero);
     font-weight: 800;
     line-height: 1.25;
-
   }
   &-highlight{
     -webkit-background-clip: text;
@@ -35,7 +34,7 @@
   }
   &-caption{
     @include rfs($font-size-caption);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
   }
 
@@ -45,7 +44,7 @@
     &-before{
       position: absolute;
       top: 30px;
-      left: -10px;
+      left: -5px;
       line-height: .8;
       background-image: linear-gradient(to right,rgba($background-gradient-1,1%),rgba($background-gradient-2,30%));
       -webkit-text-fill-color: transparent;
@@ -55,7 +54,7 @@
     &-after{
       z-index: 9;
       position: absolute;
-      top: 25px;
+      top: 20px;
       left: 0;
       -webkit-text-fill-color: transparent;
       z-index: -10;
