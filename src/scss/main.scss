@@ -21,10 +21,14 @@
   width: 100%;
   height: 20vh;
   margin-top: -5vh;
-  filter: blur(50px);
+  filter: blur(30px);
   //background-color: red;
   @include bg-gradient(to top,100%, $background-gradient-1,$background-gradient-2);
   z-index: 0;
+
+  @include media-breakpoint-down(md){
+    height: 15vh;
+  }
 }
 
 .header{
@@ -81,7 +85,11 @@
 
 .footer{
   background-color: $background-gradient-2;
-
+  &-icon-many{
+    @include media-breakpoint-down(md){
+      margin-left: -3.8rem;
+    }
+  }
 
   &::before{
     display: block;
@@ -95,6 +103,13 @@
 
 .pv-hackathon{
   position: relative;
+
+  &-video{
+    @include media-breakpoint-down(sm){
+      transform: scale(.8);
+    }
+  }
+
   &::after{
     content: "";
     display: block;
@@ -104,18 +119,40 @@
     top: -10rem;
     left: -40rem;
     background-image: url("../assets/rec_pattern.svg");
-
     background-repeat: no-repeat;
   }
   &::before{
     content: "";
     display: block;
     position: absolute;
-    height: 150%;
     background-repeat: no-repeat;
+    height: 200%;
     width: 100%;
     top: -10rem;
-    right: -50rem;
+    right: -40rem;
     background-image: url("../assets/rec_pattern.svg");
   }
+  @include media-breakpoint-down(md) {
+
+    &::after {
+      top: -10rem;
+      left: -15%;
+      z-index: -10;
+      height: 200%;
+      width: 200%;
+    }
+    &::before {
+      display: none;
+      top: -10rem;
+      right: -50rem;
+    }
+  }
+  @include media-breakpoint-down(sm){
+    &::after{
+      left: -15rem;
+      height: 250%;
+      width: 200%;
+    }
+  }
+
 }

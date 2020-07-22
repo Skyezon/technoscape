@@ -27,7 +27,7 @@ const events = [
         "image" : RthImage
     },
     {
-        'normalHeader' : `<img src="${LogoHack}" class="d-block" alt="logo"> Hackathon `,
+        'normalHeader' : `<img src="${LogoHack}" class="" alt="logo"> Hackathon `,
         'wierdHeader' : "3.0",
         "time" : `10<sup>th &nbsp;</sup>- &nbsp;11<sup>th &nbsp;</sup> October 2020`,
         "paragraph" : [

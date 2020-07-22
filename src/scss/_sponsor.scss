@@ -6,7 +6,6 @@
   }
 }
 #sponsor-list{
-
   &-platinum{
     & img{
       height: $sponsor-biggest-size
@@ -19,7 +18,7 @@
   }
   &-silver{
     & img{
-      height: $sponsor-biggest-size - 4rem;
+      height: $sponsor-biggest-size - 3rem;
     }
   }
 

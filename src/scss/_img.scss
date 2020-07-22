@@ -1,6 +1,11 @@
 .img{
   &-logo{
     width: 20rem;
+
+    @include media-breakpoint-down(sm){
+      width: 10rem;
+    }
+
   }
 
   &-down{
@@ -57,6 +62,9 @@
     top: 0;
     right: 0;
     height: 40rem;
+    @include media-breakpoint-down(sm){
+      height: 30rem;
+    }
   }
 
   &-background-event{
@@ -83,6 +91,28 @@
       height: 1rem;
       margin-right: .5rem;
     }
+
+    &-logo{
+      width: 15rem;
+
+      &-bncc{
+        width: 10rem ;
+      }
+
+      &-gojek{
+        width: 11rem ;
+      }
+
+      @include media-breakpoint-down(sm){
+        &-bncc{
+          width: 7rem ;
+        }
+
+        &-gojek{
+          width: 8rem ;
+        }
+      }
+    }
   }
 
   &-ghost-header{
@@ -90,6 +120,10 @@
     top: 0;
     left: 0;
     opacity: .10;
-    height: 70%;
+    height: 15rem;
+
+    @include media-breakpoint-down(md){
+      height: 10rem;
+    }
   }
 }

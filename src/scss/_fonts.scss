@@ -33,6 +33,12 @@
     line-height: 1.5;
   }
   &-caption{
+    @include rfs($font-size-body);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &-body{
     @include rfs($font-size-caption);
     font-weight: 400;
     line-height: 1.5;
@@ -50,6 +56,10 @@
       -webkit-text-fill-color: transparent;
       z-index: -1;
       filter: blur(10px);
+      @include media-breakpoint-down(md){
+        text-align: center;
+        top: 20px;
+      }
     }
     &-after{
       z-index: 9;
@@ -60,6 +70,10 @@
       z-index: -10;
       -webkit-text-stroke-color: rgba($secondary-white,.3);
       -webkit-text-stroke-width: 2px;
+      @include media-breakpoint-down(md){
+        text-align: center;
+        top: 10px;
+      }
     }
   }
 }
