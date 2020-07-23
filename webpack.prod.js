@@ -5,6 +5,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 const miniCssExtractPlugin = require("mini-css-extract-plugin")
 const optimize = require("optimize-css-assets-webpack-plugin")
 const terserPlugin = require("terser-webpack-plugin")
+const autoprefixer = require("autoprefixer")
 module.exports = merge(common,{
     mode: "production",
     plugins : [new miniCssExtractPlugin({filename: "[name].[contentHash].css"}),new CleanWebpackPlugin()],
@@ -18,8 +19,23 @@ module.exports = merge(common,{
     module : {
         rules : [
             {
+
                 test: /\.scss$/,
-                use : [miniCssExtractPlugin.loader,"css-loader","postcss-loader","sass-loader"]
+                use : [miniCssExtractPlugin.loader,{
+                    loader : "css-loader",
+                    options: {
+                        importLoaders : 1
+
+                    }
+                }, {
+                    loader : "postcss-loader",
+                    options : {
+                        ident : 'postcss',
+                        plugins : [
+                            autoprefixer
+                        ]
+                    }
+                },"sass-loader"]
             }
         ]
     }

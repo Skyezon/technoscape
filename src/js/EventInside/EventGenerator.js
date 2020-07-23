@@ -19,14 +19,14 @@ class EventGenerator {
         eventData.forEach((data,index) => {
             const {normalHeader,wierdHeader,time,paragraph,link,image} = data;
             eventInside.innerHTML +=`
-            <div class="row position-relative event-row my-4 py-5 px-lg-5 d-flex  flex-column-reverse" id="event-inside-${index}">
-                <div class="col-lg-6 pl-lg-5 my-5 my-lg-0 ">
+            <div class="row position-relative event-row my-2 py-5 px-lg-5 d-flex  flex-column-reverse" id="event-inside-${index}">
+                <div class="col-lg-6 pl-lg-5 my-2 my-lg-0 ">
                     <div class="font-headline-1 text-center text-lg-left position-relative d-flex flex-column justify-content-center align-items-center justify-content-lg-start align-items-lg-start wow" id="event-heading-${index}">
                         <span> ${normalHeader} </span>
                         <span class="font-shadowline" id="shadowline-${index}"><span class="font-shadowline-before"></span>${wierdHeader}<span class="font-shadowline-after"></span></span>
                     </div>
                     <div class="font-caption my-3 d-flex align-items-center wow justify-content-lg-start justify-content-center" id="timing-${index}"><img src="${DateIcon}" alt="date-icon" class="mr-3">${time}</div>
-                    <div id="event-paragraph-${index}" class="text-center wow text-lg-justify mx-5 px-lg-0"></div>
+                    <div id="event-paragraph-${index}" class="text-justify mx-lg-0 wow mx-5 px-lg-0"></div>
                     <div class="position-relative d-flex wow justify-content-lg-start justify-content-center" id="external-link-${index}">
                         <a class="my-5 d-flex align-items-center  event-link font-button" href="${link}">Visit the web <img src="${ExternalLink}" class="ml-3" alt="external-link-icon" /> </div></a>
                     </div>
