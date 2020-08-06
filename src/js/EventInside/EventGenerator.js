@@ -10,7 +10,7 @@ class EventGenerator {
     }
 
      paragraphGenerator(data) {
-        return `<p class="font-caption">${data}</p>`
+        return `<p class="font-caption font-weight-light">${data}</p>`
     }
 
      initEvent (eventData)  {
@@ -28,7 +28,7 @@ class EventGenerator {
                     <div class="font-caption my-3 d-flex align-items-center wow justify-content-lg-start justify-content-center" id="timing-${index}"><img src="${DateIcon}" alt="date-icon" class="mr-3">${time}</div>
                     <div id="event-paragraph-${index}" class="text-justify mx-lg-0 wow mx-5 px-lg-0"></div>
                     <div class="position-relative d-flex wow justify-content-lg-start justify-content-center" id="external-link-${index}">
-                        <a class="my-5 d-flex align-items-center  event-link font-button" href="${link}">Visit the web <img src="${ExternalLink}" class="ml-3" alt="external-link-icon" /> </div></a>
+                        <a class="my-lg-5 my-2 d-flex align-items-center  event-link font-button" href="${link}">Visit the web <img src="${ExternalLink}" class="ml-3" alt="external-link-icon" /> </div></a>
                     </div>
                  <div class="col-lg-6 position-relative  d-flex align-items-center justify-content-center wow" id="event-image-container-${index}">
                     <img src="${image}" alt="image-even" class="img-event" />

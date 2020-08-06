@@ -18,7 +18,8 @@
   top: 0;
   left: 0;
   display: block;
-  width: 100%;
+  width: 150%;
+  margin-left: -20px;
   height: 20vh;
   margin-top: -5vh;
   filter: blur(30px);
@@ -27,7 +28,8 @@
   z-index: 0;
 
   @include media-breakpoint-down(md){
-    height: 15vh;
+    height:15vh;
+    filter: blur(20px);
   }
 }
 
@@ -58,6 +60,7 @@
       color: transparent;
       opacity: 0;
       z-index: 0;
+      object-fit: cover;
 
       -webkit-backface-visibility: hidden;
       -webkit-animation: imageAnimation 18s linear infinite 0s;

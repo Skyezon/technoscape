@@ -18,7 +18,7 @@ const events = [
     {
         'normalHeader' : "Road to",
         'wierdHeader' : "Hackathon",
-        "time" : `18<sup>th &nbsp;</sup>- &nbsp;30<sup>th &nbsp;</sup> September 2020 (2x per week)`,
+        "time" : `18<sup>th &nbsp;</sup>- &nbsp;30<sup>th &nbsp;</sup> September 2020`,
         "paragraph" : [
             `Road to BNCC Hackathon is a <b>weekly webinar series</b> which will talk about topics that are relevant in the IT field from notable speakers.`,
             `Road to Hackathon exists as a forum for people who want to develop their knowledge in technology and to interact with fellow technology enthusiasts.`
@@ -27,7 +27,7 @@ const events = [
         "image" : RthImage
     },
     {
-        'normalHeader' : `<img src="${LogoHack}" class="" alt="logo"> Hackathon `,
+        'normalHeader' : `<img src="${LogoHack}" class="img-logo-hackathon" alt="logo"> Hackathon `,
         'wierdHeader' : "3.0",
         "time" : `10<sup>th &nbsp;</sup>- &nbsp;11<sup>th &nbsp;</sup> October 2020`,
         "paragraph" : [
