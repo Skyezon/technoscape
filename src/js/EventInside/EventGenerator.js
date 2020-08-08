@@ -15,11 +15,17 @@ class EventGenerator {
 
      initEvent (eventData)  {
         const eventInside = document.getElementById("event-inside");
-
+        const visitWeb = ['Visit the web','Register now']
         eventData.forEach((data,index) => {
             const {normalHeader,wierdHeader,time,paragraph,link,image} = data;
+            let textVisitWeb ="";
+            if (index%2 == 0){
+                textVisitWeb = visitWeb[0]
+            }else {
+                textVisitWeb = visitWeb[1]
+            }
             eventInside.innerHTML +=`
-            <div class="row position-relative event-row my-2 py-5 px-lg-5 d-flex  flex-column-reverse" id="event-inside-${index}">
+            <div class=" row position-relative event-row my-2 py-5 px-lg-5 d-flex  flex-column-reverse" id="event-inside-${index}">
                 <div class="col-lg-6 pl-lg-5 my-2 my-lg-0 ">
                     <div class="font-headline-1 text-center text-lg-left position-relative d-flex flex-column justify-content-center align-items-center justify-content-lg-start align-items-lg-start wow" id="event-heading-${index}">
                         <span> ${normalHeader} </span>
@@ -28,7 +34,7 @@ class EventGenerator {
                     <div class="font-caption my-3 d-flex align-items-center wow justify-content-lg-start justify-content-center" id="timing-${index}"><img src="${DateIcon}" alt="date-icon" class="mr-3">${time}</div>
                     <div id="event-paragraph-${index}" class="text-justify mx-lg-0 wow mx-5 px-lg-0"></div>
                     <div class="position-relative d-flex wow justify-content-lg-start justify-content-center" id="external-link-${index}">
-                        <a class="my-lg-5 my-2 d-flex align-items-center  event-link font-button" href="${link}">Visit the web <img src="${ExternalLink}" class="ml-3" alt="external-link-icon" /> </div></a>
+                        <a class="my-lg-5 my-2 d-flex align-items-center  event-link font-button" target="_blank" href="${link}">${textVisitWeb} <img src="${ExternalLink}" class="ml-3" alt="external-link-icon" /> </div></a>
                     </div>
                  <div class="col-lg-6 position-relative  d-flex align-items-center justify-content-center wow" id="event-image-container-${index}">
                     <img src="${image}" alt="image-even" class="img-event" />
@@ -44,6 +50,11 @@ class EventGenerator {
             const eventParagraph = document.getElementById(`event-paragraph-${index}`)
             const eventTime = document.getElementById(`timing-${index}`)
             const eventLink = document.getElementById(`external-link-${index}`)
+            if($(`#external-link-${index} > a`).attr("href") === '#'){
+                $(`#external-link-${index} > a`).removeClass('d-flex')
+                $(`#external-link-${index} > a`).addClass('d-none')
+            }
+
 
             if (index % 2 != 0){
                 document.getElementById(`event-inside-${index}`).classList.add('flex-lg-row-reverse')
@@ -60,6 +71,7 @@ class EventGenerator {
                 eventParagraph.classList.add('animate__fadeInLeft')
                 eventTime.classList.add('animate__fadeInLeft')
                 eventLink.classList.add('animate__fadeInLeft')
+
 
             }
             paragraph.forEach((data) => {

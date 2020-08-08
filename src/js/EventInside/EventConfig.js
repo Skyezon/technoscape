@@ -23,18 +23,18 @@ const events = [
             `Road to BNCC Hackathon is a <b>weekly webinar series</b> which will talk about topics that are relevant in the IT field from notable speakers.`,
             `Road to Hackathon exists as a forum for people who want to develop their knowledge in technology and to interact with fellow technology enthusiasts.`
         ],
-        'link' : "", //https://devcamp mungkin
+        'link' : "#", //https://devcamp mungkin
         "image" : RthImage
     },
     {
-        'normalHeader' : `<img src="${LogoHack}" class="img-logo-hackathon" alt="logo"> Hackathon `,
+        'normalHeader' : `<img src="${LogoHack}" class="img-logo-hackathon " alt="logo"> Hackathon `,
         'wierdHeader' : "3.0",
         "time" : `10<sup>th &nbsp;</sup>- &nbsp;11<sup>th &nbsp;</sup> October 2020`,
         "paragraph" : [
             `Hackathon is a 24 hour coding competition which challenges its participants to create innovative applications or websites to solve real life problems. `,
             `Participants will have a chance to interact and gain insight from mentors in the business, technology, and design mentoring session.`
         ],
-        'link' : "", //https://devcamp mungkin
+        'link' : "#", //https://devcamp mungkin
         "image": HackImage
     }
 ]

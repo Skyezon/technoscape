@@ -180,6 +180,7 @@
     left: -40rem;
     background-image: url("../assets/rec_pattern.svg");
     background-repeat: no-repeat;
+    pointer-events: none;
   }
   &::before{
     content: "";
@@ -191,6 +192,7 @@
     top: -10rem;
     right: -40rem;
     background-image: url("../assets/rec_pattern.svg");
+    pointer-events: none;
   }
   @include media-breakpoint-down(md) {
 
@@ -215,6 +217,10 @@
     }
   }
 
+}
+
+#event-inside{
+  max-width: 1366px;
 }
 
 
