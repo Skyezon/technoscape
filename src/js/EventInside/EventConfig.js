@@ -12,7 +12,7 @@ const events = [
             "Participants will gain insights and skills which they can implement to solve problems in real-life and have a chance to interact with experts from the field.",
             "Participants may also be provided with digital merchandise and videos of the conference."
         ],
-        'link' : "", //https://devcamp mungkin
+        'link' : "https://virtualconference.bncc.net", //https://devcamp mungkin
         "image" : VirconImage
     },
     {
