@@ -9,7 +9,15 @@ module.exports = {
     },
     plugins: [new htmlWebpackPlugin({
         template: "./src/index.html"
-        }),   new FaviconsWebpackPlugin('./src/assets/icon/favicon.png')],
+        }),   new FaviconsWebpackPlugin({
+        logo : './src/assets/icon/favicon.png',
+        favicons: {
+            appName: 'Technoscape',
+            appDescription : 'Event teknologi terbesar BNCC yang berfokus memberikan dampak sosial kepada masyarakat melalui event-event teknologi yang inovatif. Transforming Digital Knowledge to Innovative Solutions',
+            theme_color : "#122B5E",
+            developerName : 'BNCC'
+        }
+        })],
     module:{
         rules:[
             {
