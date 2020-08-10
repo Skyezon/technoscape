@@ -29,9 +29,9 @@ const events = [
     {
         'normalHeader' : `<img src="${LogoHack}" class="img-logo-hackathon " alt="logo"> Hackathon `,
         'wierdHeader' : "3.0",
-        "time" : `10<sup>th &nbsp;</sup>- &nbsp;11<sup>th &nbsp;</sup> October 2020`,
+        "time" : `10<sup>th &nbsp;</sup>- &nbsp;12<sup>th &nbsp;</sup> October 2020`,
         "paragraph" : [
-            `Hackathon is a 24 hour coding competition which challenges its participants to create innovative applications or websites to solve real life problems. `,
+            `Hackathon is a 48 hour coding competition which challenges its participants to create innovative applications or websites to solve real life problems. `,
             `Participants will have a chance to interact and gain insight from mentors in the business, technology, and design mentoring session.`
         ],
         'link' : "#", //https://devcamp mungkin
