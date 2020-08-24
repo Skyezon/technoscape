@@ -34,7 +34,7 @@ const events = [
             `Hackathon is a 48 hour coding competition which challenges its participants to create innovative applications or websites to solve real life problems. `,
             `Participants will have a chance to interact and gain insight from mentors in the business, technology, and design mentoring session.`
         ],
-        'link' : "#", //https://devcamp mungkin
+        'link' : "https://hackathon.bncc.net", //https://devcamp mungkin
         "image": HackImage
     }
 ]
