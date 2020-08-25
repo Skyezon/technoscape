@@ -7,6 +7,7 @@ module.exports = {
         main : "./src/index.js",
         vendor : "./src/vendor.js"
     },
+    externals: ["fs"],
     plugins: [new htmlWebpackPlugin({
         template: "./src/index.html"
         }),   new FaviconsWebpackPlugin({

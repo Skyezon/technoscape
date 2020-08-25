@@ -8,7 +8,10 @@
 #sponsor-list{
   &-platinum{
     & img{
-      height: $sponsor-biggest-size
+      height: $sponsor-biggest-size;
+      @include media-breakpoint-down(sm){
+        height: $sponsor-biggest-size - 2.5rem;
+      }
     }
   }
   &-gold{
@@ -24,7 +27,7 @@
 
   &-media-partner{
     & img{
-      height: $sponsor-biggest-size - 5rem;
+      height: $sponsor-biggest-size - 4rem;
     }
   }
 }

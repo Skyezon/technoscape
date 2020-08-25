@@ -1,9 +1,9 @@
 .img{
   &-logo{
-    width: 20rem;
+    width: 30rem;
 
     @include media-breakpoint-down(sm){
-      width: 10rem;
+      width: 15rem;
     }
 
     &-hackathon{
