@@ -156,6 +156,7 @@
 
     @include media-breakpoint-down(md){
       height: 10rem;
+      display: none;
     }
   }
 }
