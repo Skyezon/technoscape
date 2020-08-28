@@ -31,9 +31,15 @@ module.exports = merge(common,{
                     loader : "postcss-loader",
                     options : {
                         ident : 'postcss',
-                        plugins : [
-                            autoprefixer
-                        ]
+                        plugins: () => [autoprefixer({
+                            overrideBrowserslist: [
+                                "defaults",
+                                "Safari > 5.1",
+                                "IOS > 11",
+                                "> 1% in ID",
+                                'ie 10'
+                            ]
+                        })]
                     }
                 },"sass-loader"]
             }
