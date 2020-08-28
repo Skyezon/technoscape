@@ -1,16 +1,20 @@
 .img{
   &-logo{
     width: 30rem;
+    height: 3.5rem;
 
     @include media-breakpoint-down(sm){
       width: 15rem;
+      height: 1.5rem;
+
     }
 
     &-hackathon{
       height: initial;
+      width: auto;
       @include media-breakpoint-down(md){
         height: 6rem;
-
+        width: auto;
       }
     }
   }
@@ -122,9 +126,10 @@
 
     &-logo{
       width: 15rem;
-
+      height: auto;
       &-bncc{
         width: 10rem ;
+
       }
 
       &-gojek{
@@ -132,6 +137,8 @@
       }
 
       @include media-breakpoint-down(sm){
+        height: auto;
+
         &-bncc{
           width: 7rem ;
         }
@@ -157,6 +164,7 @@
     @include media-breakpoint-down(md){
       height: 10rem;
       display: none;
+      width: auto;
     }
   }
 }
