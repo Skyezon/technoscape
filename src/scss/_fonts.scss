@@ -6,7 +6,7 @@
   }
   &-highlight{
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     @include bg-gradient(to left,100%,$gradient-accent-1,$gradient-accent-2);
   }
 
