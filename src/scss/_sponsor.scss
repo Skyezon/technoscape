@@ -27,9 +27,11 @@
 
   &-media-partner{
     & img{
-      height: $sponsor-biggest-size - 2rem;
+      //height: $sponsor-biggest-size - 2rem;
+      width: $sponsor-biggest-size + 4rem;
+
       @include media-breakpoint-down(sm){
-        height: $sponsor-biggest-size - 3rem;
+        width: $sponsor-biggest-size + 2rem;
       }
     }
   }

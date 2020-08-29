@@ -9,6 +9,10 @@
     -webkit-text-fill-color: transparent;
     @include bg-gradient(to left,100%,$gradient-accent-1,$gradient-accent-2);
   }
+
+  &-nohighlight{
+    -webkit-text-fill-color: $secondary-white;
+  }
   &-headline{
     &-1{
       @include rfs($font-size-headline-1);
