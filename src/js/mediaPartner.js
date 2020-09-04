@@ -1,8 +1,8 @@
 
 class  MediaPartner {
-        constructor() {
-            this.initMediaPartner()
-        }
+    constructor() {
+        this.initMediaPartner()
+    }
     importAll(r) {
         let images = {};
         r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
@@ -19,7 +19,6 @@ class  MediaPartner {
             <img src="${images[key]['default']}" alt="${key}" />
         `
         })
-
     }
 }
 
