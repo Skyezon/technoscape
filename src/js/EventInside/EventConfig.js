@@ -23,7 +23,7 @@ const events = [
             `Road to BNCC Hackathon is a <b>weekly webinar series</b> which will talk about topics that are relevant in the IT field from notable speakers.`,
             `Road to Hackathon exists as a forum for people who want to develop their knowledge in technology and to interact with fellow technology enthusiasts.`
         ],
-        'link' : "#", //https://devcamp mungkin
+        'link' : "https://linktr.ee/TechnoScape", //https://devcamp mungkin
         "image" : RthImage
     },
     {
