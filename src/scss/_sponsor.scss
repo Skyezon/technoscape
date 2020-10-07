@@ -1,6 +1,6 @@
 .sponsor-list{
   margin-bottom: 5rem !important;
-  & > img{
+  &  img{
     margin: 1rem;
     margin-bottom: 2rem;
   }
@@ -24,11 +24,20 @@
       height: $sponsor-biggest-size - 3rem;
     }
   }
+  &-collab{
+
+    & a img{
+      width: $sponsor-biggest-size + 8rem;
+      @include media-breakpoint-down(sm){
+        width: $sponsor-biggest-size + 4rem;
+      }
+    }
+  }
 
   &-media-partner{
     & img{
       //height: $sponsor-biggest-size - 2rem;
-      width: $sponsor-biggest-size + 4rem;
+      width: $sponsor-biggest-size + 3.5rem;
 
       @include media-breakpoint-down(sm){
         width: $sponsor-biggest-size + 2rem;
